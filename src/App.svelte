@@ -1,10 +1,16 @@
 <script>
+	import Login from './Login.svelte';
+
 	export let name;
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+<svelte:head>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" rel="stylesheet" />
+</svelte:head>
+
+<main class="content">
+	<h1>Welcome to {name}!</h1>
+	<Login />
 </main>
 
 <style>
